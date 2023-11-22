@@ -5,6 +5,12 @@
 */
 
 .single {
+  &__inner {
+    background: #F8F8F8;
+    padding: 30px 30px 70px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
   &__h1 {
     font-size: 32px;
     font-weight: bold;
@@ -17,13 +23,18 @@
   &__h2 {
     font-size: 22px;
     font-weight: bold;
-    padding: 15px 0;
-    border-bottom: 2px solid #000000;
+    padding: 9px 0;
+    border-bottom: 2px solid #3A97B5;
     margin-bottom: 30px;
+    span {
+      border-left: 7px solid #3A97B5;
+      padding-left: 20px;
+      display: inline-block;
+    }
     @media #{$sp} {
       font-size: 18px;
       padding: 10px 0;
-      border-bottom: 1px solid #000000;
+      border-bottom: 1px solid #3A97B5;
       margin-bottom: 15px;
     }
   }
@@ -43,6 +54,14 @@
   }
   &__lead {
     margin-bottom: 50px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+    }
     @media #{$sp} {
       margin-bottom: 30px;
     }
@@ -53,18 +72,32 @@
       margin-bottom: 15px;
     }
   }
+  &__category {
+    margin-bottom: 30px;
+    @media #{$sp} {
+      margin-bottom: 15px;
+    }
+    .category {
+      background: #3A97B5;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 14px;
+      padding: 3px 20px;
+    }
+  }
   &__toc {
-    background: #F7F7F7;
-    padding: 40px;
+    background: #fff;
+    border-top: 6px solid #3A97B5;
+    padding: 20px 50px 30px;
     margin-bottom: 60px;
     @media #{$sp} {
-      padding: 15px;
+      padding: 15px 15px 15px 40px;
       margin-bottom: 30px;
     }
     &--ttl {
       font-size: 20px;
       font-weight: bold;
-      color: #0D5BAB;
+      color: #3A97B5;
       text-align: center;
       margin-bottom: 20px;
       position: relative;
@@ -73,35 +106,22 @@
         margin-bottom: 15px;
       }
     }
-    dl {
+    ul {
       a {
         color: #333333;
         text-decoration: underline;
         &:hover {
           opacity: 1;
-          color: #0D5BAB;
+          color: #3A97B5;
           text-decoration: none;
         }
       }
-      dt {
+      li {
+        list-style: disc;
         font-weight: bold;
-        margin-bottom: 10px;
-      }
-      dd {
+        color: #3A97B5;
         &:not(:last-child) {
           margin-bottom: 10px;
-        }
-        ul {
-          padding-left: 1.5em;
-          li {
-            list-style: disc;
-            &:not(:last-child) {
-              margin-bottom: 5px;
-            }
-            a {
-              display: inline;
-            }
-          }
         }
       }
     }
@@ -185,6 +205,316 @@
       }
     }
   }
+  .cardLink {
+    border: 2px solid #3A97B5;
+    background: #fff;
+    &:hover {
+      background: #3A97B5;
+      color: #fff;
+    }
+  }
+  .supervision {
+    .single__ttl {
+      font-size: 20px;
+      font-weight: 700;
+      position: relative;
+      background: none;
+      color: #000;
+      text-align: left;
+      padding-left: 25px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        margin: auto;
+        width: 10px;
+        height: 9px;
+        clip-path: polygon(70% 50%, 0 0, 0 100%);
+        background: #3A97B5;
+      }
+    }
+    .item {
+      background: #fff;
+      border-top: 6px solid #3A97B5;
+      padding: 30px;
+      &__img {
+        width: 150px;
+        @media #{$sp} {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+      &__box {
+        width: calc(100% - 150px - 15px);
+        @media #{$sp} {
+          width: 100%;
+        }
+        &--txt {
+          p {
+            &:not(:last-child) {
+              margin-bottom: 30px;
+              @media #{$sp} {
+                margin-bottom: 15px;
+              }
+            }
+          }
+          @media #{$sp} {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .recommend-card {
+    background-image: url(/assets/img/common/bg_recommend_01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 60px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    @media #{$sp} {
+      padding: 20px;
+    }
+    .single__ttl {
+      font-size: 24px;
+      color: #000;
+      background: none;
+      @media #{$sp} {
+        font-size: 20px;
+      }
+    }
+    ul.grid-h {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px 40px;
+      max-width: 680px;
+      @media #{$sp} {
+        display: block;
+      }
+      .item {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: 1 / 6;
+        text-align: center;
+        @media #{$sp} {
+          display: block;
+        }
+        &__ttl {
+          font-size: 14px;
+          font-weight: 700;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+        }
+        &__img {
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+        }
+        &__lead {
+          font-size: 16px;
+          font-weight: 700;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+        }
+        &__txt {
+          font-size: 14px;
+          flex-grow: 1;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+          &--note {
+            font-size: 10px;
+            color: #999999;
+          }
+        }
+        &__btn {
+          @media #{$sp} {
+          margin-bottom: 20px;
+          }
+          margin-top: auto;
+          .btn-blue {
+            width: 100%;
+            padding: 10px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+
+    ul.grid-v {
+      max-width: 680px;
+      @media #{$sp} {
+      }
+      .item {
+        display: grid;
+        grid-template-columns: 220px auto 200px; 
+        grid-template-rows: auto auto; 
+        grid-template-areas: 
+          "ttl ttl ttl"
+          "img inner btn"; 
+        grid-gap: 10px 30px;
+        align-items: center;
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        @media #{$sp} {
+          display: block;
+        }
+        &__ttl {
+          grid-area: ttl;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          width: 220px;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          width: auto;
+          }
+        }
+        &__img {
+          grid-area: img;
+          margin-bottom: auto;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+        }
+        &__inner {
+          grid-area: inner;
+          margin-bottom: auto;
+        }
+        &__lead {
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+        }
+        &__txt {
+          font-size: 14px;
+          flex-grow: 1;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+          &--note {
+            font-size: 10px;
+            color: #999999;
+          }
+        }
+        &__btn {
+          grid-area: btn;
+          @media #{$sp} {
+          margin-bottom: 20px;
+          }
+          .btn-blue {
+            width: 100%;
+            padding: 10px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+
+  .recommend-service {
+    background-image: url(/assets/img/common/bg_recommend_02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 60px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    @media #{$sp} {
+      padding: 20px;
+    }
+    .single__ttl {
+      font-size: 24px;
+      color: #000;
+      background: none;
+      @media #{$sp} {
+        font-size: 20px;
+      }
+    }
+    ul.grid-v {
+      max-width: 680px;
+      @media #{$sp} {
+      }
+      .item {
+        display: grid;
+        grid-template-columns: 220px auto 200px; 
+        grid-template-rows: auto auto; 
+        grid-template-areas: 
+          "ttl ttl ttl"
+          "img inner btn"; 
+        grid-gap: 10px 30px;
+        align-items: center;
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        @media #{$sp} {
+          display: block;
+        }
+        &__ttl {
+          grid-area: ttl;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          width: 220px;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          width: auto;
+          }
+        }
+        &__img {
+          grid-area: img;
+          margin-bottom: auto;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+        }
+        &__inner {
+          grid-area: inner;
+          margin-bottom: auto;
+        }
+        &__lead {
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+        }
+        &__txt {
+          font-size: 14px;
+          flex-grow: 1;
+          @media #{$sp} {
+          margin-bottom: 10px;
+          }
+          &--note {
+            font-size: 10px;
+            color: #999999;
+          }
+        }
+        &__btn {
+          grid-area: btn;
+          @media #{$sp} {
+          margin-bottom: 20px;
+          }
+          .btn-blue {
+            width: 100%;
+            padding: 10px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
 }
 
 .news-single {
@@ -238,3 +568,5 @@
   }
 
 }
+
+

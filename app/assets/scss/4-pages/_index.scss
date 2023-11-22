@@ -3,3 +3,323 @@
   TOP
   ----------------
 */
+
+.home {
+
+  .mv {
+    background: url(/assets/img/home/img_mv.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center top;
+    padding: 62px 0 78px;
+    @media #{$sp} {
+      padding: 30px 10px 30px;
+    }
+    &__inner {
+      width: 570px;
+      height: 228px;
+      background: #fff;
+      margin: 0 auto;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding-top: 34px;
+      @media #{$sp} {
+        max-width: 570px;
+        width: auto;
+        height: auto;
+        padding: 15px;
+        margin: auto;
+      }
+      &--ttl {
+        font-size: 37px;
+        line-height: 47px;
+        font-weight: 700;
+        color: #1A89AD;
+        @media #{$sp} {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        & > span {
+          font-size: 27px;
+          color: #000;
+          display: block;
+          @media #{$sp} {
+            font-size: 16px;
+          }
+        }
+      }
+      &--lead {
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 11px;
+        @media #{$sp} {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  .column-category {
+    margin: 0 auto;
+    .column-category-list {
+      &__item {
+        background: #F2F2F2;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        text-align: center;
+        width: calc(33.33333% - 30px);
+        @media #{$sp} {
+          width: 100%;
+        }
+        &--ttl {
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 22px;
+          position: relative;
+          @media #{$sp} {
+            margin-bottom: 10px;
+            font-size: 16px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat; 
+            display: inline-block;
+            top: 0;
+            bottom: 0;
+          }
+          &.ico-01 {
+            margin-left: 50px;
+            @media #{$sp} {
+              margin-left: 45px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_01.png);
+              width: 52px;
+              height: 38px;
+              margin: auto auto auto -50px;
+              @media #{$sp} {
+                width: 42px;
+                height: 28px;
+                margin-left: -45px;
+              }
+            }
+          }
+          &.ico-02 {
+            margin-left: 45px;
+            @media #{$sp} {
+              margin-left: 40px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_02.png);
+              width: 34px;
+              height: 43px;
+              margin: auto auto auto -45px;
+              @media #{$sp} {
+                width: 22px;
+                height: 33px;
+                margin-left: -40px;
+              }
+            }
+          }
+          &.ico-03 {
+            margin-left: 45px;
+            @media #{$sp} {
+              margin-left: 40px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_03.png);
+              width: 36px;
+              height: 30px;
+              margin: auto auto auto -45px;
+              @media #{$sp} {
+                width: 26px;
+                height: 20px;
+                margin-left: -40px;
+              }
+            }
+          }
+          &.ico-04 {
+            margin-left: 35px;
+            @media #{$sp} {
+              margin-left: 30px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_04.png);
+              width: 26px;
+              height: 32px;
+              margin: auto auto auto -35px;
+              @media #{$sp} {
+                width: 22px;
+                height: 22px;
+                margin-left: -30px;
+              }
+            }
+          }
+          &.ico-05 {
+            margin-left: 35px;
+            @media #{$sp} {
+              margin-left: 30px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_05.png);
+              width: 26px;
+              height: 32px;
+              margin: auto auto auto -35px;
+              @media #{$sp} {
+                width: 16px;
+                height: 22px;
+                margin-left: -30px;
+              }
+            }
+          }
+          &.ico-06 {
+            margin-left: 40px;
+            @media #{$sp} {
+              margin-left: 35px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_06.png);
+              width: 35px;
+              height: 37px;
+              margin: auto auto auto -40px;
+              @media #{$sp} {
+                width: 25px;
+                height: 27px;
+                margin-left: -35px;
+              }
+            }
+          }
+          &.ico-07 {
+            margin-left: 40px;
+            @media #{$sp} {
+              margin-left: 35px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_07.png);
+              width: 37px;
+              height: 28px;
+              margin: auto auto auto -40px;
+              @media #{$sp} {
+                width: 27px;
+                height: 18px;
+                margin-left: -35px;
+              }
+            }
+          }
+          &.ico-08 {
+            margin-left: 50px;
+            @media #{$sp} {
+              margin-left: 40px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_08.png);
+              width: 45px;
+              height: 30px;
+              margin: auto auto auto -50px;
+              @media #{$sp} {
+                width: 35px;
+                height: 20px;
+                margin-left: -40px;
+              }
+            }
+          }
+          &.ico-09 {
+            margin-left: 50px;
+            @media #{$sp} {
+              margin-left: 45px;
+            }
+            &::before {
+              background-image: url(/assets/img/home/ico_category_09.png);
+              width: 46px;
+              height: 35px;
+              margin: auto auto auto -50px;
+              @media #{$sp} {
+                width: 36px;
+                height: 25px;
+                margin-left: -45px;
+              }
+            }
+          }
+        }
+        &--txt {
+          font-size: 18px;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+        }
+        a {
+          position: relative;
+          display: block;
+          padding: 30px 20px;
+          height: 100%;
+          @media #{$sp} {
+            padding: 15px 10px;
+          }
+          &::after {
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            background: #1A89AD;
+            content: "";
+            width: 16px; 
+            height: 16px;
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .document {
+    background: #F2F2F2;
+    .document-list {
+      justify-content: space-around;
+      margin-bottom: 50px;
+      &__item {
+        background: #fff;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        text-align: center;
+        width: calc(33.33333% - 30px);
+        display: flex;
+        @media #{$sp} {
+          width: auto;
+        }
+        &--img {
+          border: 1px solid #707070;
+          margin: 0 -30px 18px;
+          @media #{$sp} {
+            margin: 0 -15px 10px;
+          }
+        }
+        &--ttl {
+          font-size: 20px;
+          font-weight: 700;
+          flex-grow: 1;
+          margin-bottom: 30px;
+          text-align: left;
+          @media #{$sp} {
+            font-size: 16px;
+          }
+        }
+        &--btn {
+          margin-top: auto;
+        }
+        a {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px 30px;
+        &:hover .btn-blue {
+          background: linear-gradient(270deg, rgba(4,151,181,1) 0%, rgba(83,210,178,1) 100%);
+        }
+        @media #{$sp} {
+          padding: 0 15px 15px;
+        }
+        }
+      }
+    }
+  }
+
+
+}

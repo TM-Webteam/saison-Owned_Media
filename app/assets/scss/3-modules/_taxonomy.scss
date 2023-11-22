@@ -6,21 +6,20 @@
 
 .article {
   &__ttl {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     @media #{$sp} {
       font-size: 20px;
       margin-bottom: 15px;
     }
   }
   &__lead {
-    font-size: 22px;
-    margin-bottom: 70px;
+    font-size: 18px;
     color: #333333;
+    text-align: left;
     @media #{$sp} {
-      font-size: 18px;
-      margin-bottom: 30px;
+      font-size: 16px;
     }
   }
   &__wrap {

@@ -1,0 +1,273 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<!-- コラム一覧カテゴリ別ページ -->
+<main class="column">
+
+  <section>
+    <div class="containers flex">
+
+      <!-- 投稿記事詳細メイン -->
+      <article class="main-conts single">
+        <div class="single__inner">
+
+          <div class="flex gap20 fS">
+            <div class="single__time"><span class="time">更新日 : 2023年5月8日</span></div>
+            <div class="single__category"><span class="category">カテゴリ名</span></div>
+          </div>
+
+          <h1 class="single__h1">中小企業におすすめの法人カードとは？法人カードのメリットや選ぶ際のポイントを解説</h1>
+
+          <!-- SNSシェアボタン -->
+          <ul class="flex gap20 fS aiC sns-share">
+            <li><a href="#"><img src="/assets/img/common/fb.svg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="/assets/img/common/x.svg" alt="X"></a></li>
+            <li><a href="#"><img src="/assets/img/common/line.svg" alt="Line"></a></li>
+          </ul>
+
+          <div class="single__img">
+            <img src="/assets/img/common/img_column_03.png" alt="">
+          </div>
+
+          <div class="single__lead">
+            <p>個人向けクレジットカードとは異なり、法人カードにはビジネスに役立つさまざまな特典やサービスが付帯しています。優待を上手に活用すれば、ビジネスを効率的に進めることが可能です。</p>
+            <p>特に中小企業の場合は、事務作業などに割く人手が足りないことも多いので、自社の業務に適した付帯サービス・優待特典が充実している法人カードを選ぶことをおすすめします。</p>
+            <p>ただし、法人カードを選ぶ際には付帯している特典やサービス以外にも、いろいろとチェックしたいポイントがあります。</p>
+            <p>本記事では、中小企業に適した法人カードの条件を説明するとともに、おすすめの法人カードを2枚ご紹介します。</p>
+          </div>
+
+
+          <div class="single__toc">
+            <div class="single__toc--ttl">目次</div>
+            <ul>
+              <li><a href="#">法人カードのメリット</a></li>
+              <li><a href="#">中小企業が法人カードを選ぶ際にチェックすべき点</a></li>
+              <li><a href="#">法人カードの審査内容</a></li>
+              <li><a href="#">中小企業におすすめの法人カード</a></li>
+              <li><a href="#">中小企業におすすめの法人カードによくある質問</a></li>
+              <li><a href="#">複数のカードを比較検討して自社に最適な法人カードを選ぼう</a></li>
+            </ul>
+          </div>
+
+          <h2 class="single__h2"><span>経理業務の効率化を図れる</span></h2>
+
+          <div class="single__txt">
+            <p>会社の光熱費や社員の出張代などの経費の支払いを法人カードにまとめれば、仮払いや立て替えなどをする必要がなく、経理業務の効率化を図れます。</p>
+            <p>また、会計ソフトによっては法人カードと連動が可能です。金融機関の明細を会計ソフトが自動で取得し、AIが自動で仕分けして帳簿に反映するなどの機能を搭載しているため、面倒な経理業務を削減できます。</p>
+          </div>
+
+          <!-- 記事詳細カードリンク -->
+          <a href="#" class="flex cardLink">
+            <figure class="cardLink__img"><img src="/assets/img/common/img_column_02.png" alt=""></figure>
+            <summary class="cardLink__box">
+              <div class="cardLink__box--ttl">関連記事のタイトルが入ります。関連記事のタイトルが入ります。
+  関連記事のタイトルが入ります。関連記事のタイトルが入ります。</div>
+              <div class="cardLink__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が ...</div>
+            </summary>
+          </a>
+
+          <h2 class="single__h2"><span>経理業務の効率化を図れる</span></h2>
+
+          <div class="single__txt">
+            <p>法人カードは引き落とし口座に法人口座を設定できます。法人口座から経費を直接引き落とせるようになれば、経理業務が一括管理できます。資金や経費の流れが正確に把握しやすくなることもメリットです。</p>
+            <p>ただし、法人カードによっては「カード名義と同一名義の代表者名併記の法人口座のみ」のような条件が設定されていることがあるので、申し込むときに確認しましょう。</p>
+          </div>
+
+          <!-- この記事を監修した人 -->
+          <div class="supervision">
+            <h3 class="single__ttl">この記事を監修した人</h3>
+            <div class="item">
+              <div class="flex gap15">
+                <figure class="item__img"><img src="/assets/img/common/img_supervision.png" alt=""></figure>
+                <summary class="item__box">
+                  <div class="item__box--txt">
+                    <p>2006年11月 卓越した専門性が求められる世界共通水準のFP資格であるCFP認定を受けると同時に、国家資格であるファイナンシャル・プランニング技能士1級を取得。2017年10月 独立。主に個人を相手にお金に関する相談及び提案設計業務を行う。個人向け相談(資産運用・保険診断・税金相談・相続対策・家計診断・ローン住宅購入のアドバイス)、企業向け相談(補助金、助成金の申請アドバイス・各種申請業務代行)の他、資産運用など上記内容にまつわるセミナー講師(企業向け・サークル、団体向け)を行う傍ら、執筆・監修業も手掛ける。</p>
+                    <p>【保有資格】<br>
+                    CFP、1級ファイナンシャル・プランニング技能士、DCプランナー、住宅ローンアドバイザー、証券外務員</p>
+                  </div>
+                </summary>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- おすすめのクレジットカード -->
+        <div class="recommend-card">
+          <h3 class="single__ttl">おすすめのクレジットカード</h3>
+          <ul class="grid-h">
+            <li class="item">
+              <div class="item__ttl">セゾンプラチナ・アメリカン・<br class="only-pc">エキスプレス(R)・カード</div>
+              <figure class="item__img"><img src="/assets/img/common/img_card_platinum.png" alt=""></figure>
+              <div class="item__lead">遥かに超えた価値、<br class="only-pc">それは究極の信頼。</div>
+              <div class="item__txt">年会費22,000円(税込)</div>
+              <div class="item__btn"><a class="btn-blue">詳しくはこちら</a></div>
+            </li>
+            <li class="item">
+              <div class="item__ttl">セゾンゴールド・アメリカン・<br class="only-pc">エキスプレス(R)・カード</div>
+              <figure class="item__img"><img src="/assets/img/common/img_card_gold.png" alt=""></figure>
+              <div class="item__lead">サービス&ステータス<br class="only-pc">賢者が選ぶこの1枚</div>
+              <div class="item__txt">年会費初年度無料<br>2年目以降11,000円(税込)</div>
+              <div class="item__btn"><a class="btn-blue">詳しくはこちら</a></div>
+            </li>
+            <li class="item">
+              <div class="item__ttl">セゾンパール・アメリカン・<br class="only-pc">エキスプレス(R)・カード</div>
+              <figure class="item__img"><img src="/assets/img/common/img_card_pearl.png" alt=""></figure>
+              <div class="item__lead">パールの輝きと<br class="only-pc">多彩な特典をこの1枚に集約</div>
+              <div class="item__txt">年会費初年度無料<br>2年目以降1,100円(税込)<br><span class="item__txt--note">※年一回のご利用で次年度無料</span></div>
+              <div class="item__btn"><a class="btn-blue">詳しくはこちら</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- おすすめのクレジットカード -->
+        <div class="recommend-card">
+          <h3 class="single__ttl">おすすめのクレジットカード</h3>
+          <ul class="grid-v">
+            <li class="item">
+              <div class="item__ttl">セゾンプラチナ・アメリカン・<br class="only-pc">エキスプレス(R)・カード</div>
+              <figure class="item__img"><img src="/assets/img/common/img_card_platinum.png" alt=""></figure>
+              <div class="item__inner">
+                <div class="item__lead">遥かに超えた価値、<br class="only-pc">それは究極の信頼。</div>
+                <div class="item__txt">年会費22,000円(税込)</div>
+              </div>
+              <div class="item__btn"><a class="btn-blue">詳しくはこちら</a></div>
+            </li>
+            <li class="item">
+              <div class="item__ttl">セゾンゴールド・アメリカン・<br class="only-pc">エキスプレス(R)・カード</div>
+              <figure class="item__img"><img src="/assets/img/common/img_card_gold.png" alt=""></figure>
+              <div class="item__inner">
+                <div class="item__lead">サービス&ステータス<br class="only-pc">賢者が選ぶこの1枚</div>
+                <div class="item__txt">年会費初年度無料<br>2年目以降11,000円(税込)</div>
+              </div>
+              <div class="item__btn"><a class="btn-blue">詳しくはこちら</a></div>
+            </li>
+            <li class="item">
+              <div class="item__ttl">セゾンパール・アメリカン・<br class="only-pc">エキスプレス(R)・カード</div>
+              <figure class="item__img"><img src="/assets/img/common/img_card_pearl.png" alt=""></figure>
+              <div class="item__inner">
+                <div class="item__lead">パールの輝きと<br class="only-pc">多彩な特典をこの1枚に集約</div>
+                <div class="item__txt">年会費初年度無料<br>2年目以降1,100円(税込)<br><span class="item__txt--note">※年一回のご利用で次年度無料</span></div>
+              </div>
+              <div class="item__btn"><a class="btn-blue">詳しくはこちら</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- おすすめのクレジットカード -->
+        <div class="recommend-card">
+          <h3 class="single__ttl">おすすめのクレジットカード</h3>
+          <ul class="grid-v">
+            <li class="item">
+              <div class="item__ttl">セゾンプラチナ・アメリカン・エキスプレス(R)・カード</div>
+              <figure class="item__img"><img src="/assets/img/common/img_card_platinum.png" alt=""></figure>
+              <div class="item__inner">
+                <div class="item__lead">遥かに超えた価値、<br class="only-pc">それは究極の信頼。</div>
+                <div class="item__txt">年会費22,000円(税込)</div>
+              </div>
+              <div class="item__btn"><a class="btn-blue">詳しくはこちら</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- おすすめのサービス -->
+        <div class="recommend-service">
+          <h3 class="single__ttl">おすすめのサービス</h3>
+          <ul class="grid-v">
+            <li class="item">
+              <div class="item__ttl">支払い.com</div>
+              <figure class="item__img"><img src="/assets/img/common/img_shiharai.png" alt=""></figure>
+              <div class="item__inner">
+                <div class="item__lead">中小企業向けの<br class="only-pc">「第三の資金繰り改善策」です。</div>
+                <div class="item__txt">全ての支払いを、最長60日後にカードで先延ばしできます。</div>
+              </div>
+              <div class="item__btn"><a class="btn-blue">詳しくはこちら</a></div>
+            </li>
+          </ul>
+        </div>
+
+      </article>
+
+      <!-- サイドメニュー -->
+      <aside class="side-nav">
+
+        <div class="document">
+          <h3 class="ttl-tertiary">お役立ち資料（無料）</h3>
+          <div class="item">
+            <div class="item__img"><img src="/assets/img/common/img_document_01.png" alt=""></div>
+            <div class="item__ttl">知らないともったいない！<br>ビジネスカードの🉐活用ガイド</div>
+            <div class="item__btn"><a href="#" class="btn-blue">資料をダウンロードする</a></div>
+          </div>
+        </div>
+
+        <div class="related-list">
+          <h3 class="ttl-tertiary">関連記事</h3>
+          <a href="#" class="flex aiC inherit item">
+            <div class="item__img"><img src="/assets/img/common/img-blog01.jpg" alt=""></div>
+            <div class="item__ttl">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</div>
+          </a>
+          <a href="#" class="flex aiC inherit item">
+            <div class="item__img"><img src="/assets/img/common/img-blog02.jpg" alt=""></div>
+            <div class="item__ttl">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</div>
+          </a>
+          <a href="#" class="flex aiC inherit item">
+            <div class="item__img"><img src="/assets/img/common/img-blog03.jpg" alt=""></div>
+            <div class="item__ttl">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</div>
+          </a>
+          <a href="#" class="flex aiC inherit item">
+            <div class="item__img"><img src="/assets/img/common/img-blog04.jpg" alt=""></div>
+            <div class="item__ttl">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</div>
+          </a>
+          <a href="#" class="flex aiC inherit item">
+            <div class="item__img"><img src="/assets/img/common/img-blog05.jpg" alt=""></div>
+            <div class="item__ttl">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</div>
+          </a>
+        </div>
+
+        <ul class="bnr-list">
+          <li><a href="#"><img src="/assets/img/common/bnr_01.png" alt=""></a></li>
+          <li><a href="#"><img src="/assets/img/common/bnr_02.png" alt=""></a></li>
+          <li><a href="#"><img src="/assets/img/common/bnr_03.png" alt=""></a></li>
+          <li><a href="#"><img src="/assets/img/common/bnr_04.png" alt=""></a></li>
+          <li><a href="#"><img src="/assets/img/common/bnr_05.png" alt=""></a></li>
+        </ul>
+
+      </aside>
+      
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul>
+        <li>
+          <a href="/">TOP</a>
+        </li>
+        <li>
+          <a href="#">中小企業におすすめの法人カードとは？法人カードのメリットや選ぶ際のポイントを解説</a>
+        </li>
+      </ul>
+    <div>
+  </section>
+
+</main>
+
+{% endblock %}

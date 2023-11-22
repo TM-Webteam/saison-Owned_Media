@@ -4,3 +4,143 @@
   ----------------
 */
 
+.ttl-en[data-en-label]::before, .ttl-en:not([data-en-label]) {
+    display: block;
+    content: attr(data-en-label);
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #0497B5;
+    line-height: 1;
+}
+
+
+.column {
+  .column-ttl {
+    background: url(/assets/img/common/bg_column.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center top;
+    max-width: 800px;
+    text-align: center;
+    padding: 26px 30px 30px;
+    margin-bottom: 50px;
+    .article__sub {
+      background: #3A97B5;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1;
+      padding: 10px 26px;
+      display: inline-block;
+      margin-bottom: 13px;
+      @media #{$sp} {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+  }
+  .article__wrap {
+    .item {
+      border: 2px solid #3A97B5;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      padding: 30px;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &__box--ttl {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+.side-nav {
+  .document {
+    background: #F5F5F5;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    .ttl-tertiary {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(/assets/img/common/ico_document.png);
+        background-size: contain;
+        background-repeat: no-repeat; 
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        height: 24px;
+        margin: auto auto auto -25px;
+      }
+    }
+    .item {
+      .item__img {
+        margin-bottom: 15px;
+      }
+      .item__ttl {
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .related-list {
+    background: #F5F5F5;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    .ttl-tertiary {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 23px;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(/assets/img/common/ico_related.png);
+        background-size: contain;
+        background-repeat: no-repeat; 
+        top: 0;
+        bottom: 0;
+        width: 25px;
+        height: 30px;
+        margin: auto auto auto -30px;
+      }
+    }
+    .item {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &__img {
+        width: 30%;
+        img {
+          aspect-ratio: 3 / 2;
+          object-fit: cover;
+        }
+      }
+      &__ttl {
+        width: calc(100% - 30% - 20px);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 14px;
+      }
+    }
+  }
+  .bnr-list {
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+}
+

@@ -99,7 +99,12 @@
       gap: 5px;
     }
   }
-  &.gap20 {
+  &.gap15 {
+    gap: 15px;
+    @media #{$sp} {
+      gap: 5px;
+    }
+  }  &.gap20 {
     gap: 20px;
     @media #{$sp} {
       gap: 10px;
@@ -182,11 +187,13 @@ a,button[type="submit"] {
 
 .containers {
 	max-width: $container;
+  min-width: $container;
 	width: 100%;
 	margin: 0 auto;
-	padding: 70px 30px;
+	padding: 70px 0;
 	@media #{$sp} {
 		padding: 35px 15px;
+    min-width: 100%;
 	}
 }
 .containers-full {
@@ -237,7 +244,7 @@ a,button[type="submit"] {
 main {
   padding-top: 140px;
   @media #{$sp} {
-    padding-top: 60px;
+    padding-top: 75px;
   }
 }
 
@@ -284,7 +291,7 @@ main {
 
 /*** 2カラム　右側にnav ***/
 .main-conts {
-  width: calc(100% - 300px - 60px);
+  width: calc(100% - 334px - 60px);
   @media #{$sp} {
     width: 100%;
     margin-bottom: 40px;
@@ -292,7 +299,7 @@ main {
 }
 
 .side-nav {
-  width: 300px;
+  width: 334px;
   @media #{$sp} {
     width: 100%;
   }

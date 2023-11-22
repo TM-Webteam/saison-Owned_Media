@@ -3,6 +3,85 @@
   ボタン
   ----------------
 */
+
+.btn-blue {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(4,151,181,1) 0%, rgba(83,210,178,1) 100%);
+  width: 248px;
+  height: 46px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  &:hover {
+  background: linear-gradient(270deg, rgba(4,151,181,1) 0%, rgba(83,210,178,1) 100%);
+  opacity: 1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 17px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: all .3s;
+  }
+}
+
+.btn-white {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3A97B5;
+  background: #fff;
+  width: 384px;
+  height: 67px;
+  border: 2px solid #3A97B5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  &:hover {
+  background: #3A97B5;
+  color: #fff;
+  opacity: 1;
+  &::after {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  }
+  @media #{$sp} {
+    width: 80%;
+    max-width: 384px;
+    font-size: 14px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 17px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #3A97B5;
+    border-right: 2px solid #3A97B5;
+    transform: rotate(45deg);
+    transition: all .3s;
+  }
+}
+
+
 .more {
 	display: block;
   max-width: 560px;
